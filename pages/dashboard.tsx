@@ -37,7 +37,7 @@ export default function Dashboard() {
         w={["100%", "100%", "10%", "15%", "20%"]}
         flexDir="column"
         alignItems="center"
-        backgroundColor="#100007"
+        backgroundColor="#12152b"
         color="#fff"
       >
         <Flex
@@ -119,14 +119,14 @@ export default function Dashboard() {
 
       {/* Column 2 */}
       <Flex
-        className="gradient-bg-services"
+        className="gradient-bg-footer"
         w={["100%", "100%", "60%", "60%", "55%"]}
         p="3%"
         flexDir="column"
         overflow="auto"
         minH="100vh"
       >
-        <Heading className="text-gradient-heading" fontWeight="normal" mb={4} letterSpacing="tight">
+        <Heading color="gray.50" fontWeight="normal" mb={4} letterSpacing="tight">
           Welcome back,{" "}
           <Flex display="inline-flex" fontWeight="bold">
             User1110
@@ -333,7 +333,7 @@ export default function Dashboard() {
       {/* Column 3 */}
       <Flex
         w={["100%", "100%", "30%"]}
-        className="gradient-bg-welcome"
+        className="gradient-bg-footer"
         p="3%"
         flexDir="column"
         overflow="auto"
@@ -378,7 +378,7 @@ export default function Dashboard() {
             0
           </Flex>
         </Flex>
-        <Heading className="text-gradient-heading" letterSpacing="tight">My Accounts</Heading>
+        <Heading color="gray.50" letterSpacing="tight">My Accounts</Heading>
         {value == 1 && (
           <Box
             className="white-glassmorphism eth-card"
@@ -386,10 +386,6 @@ export default function Dashboard() {
             mt={4}
             w="100%"
             h="200px"
-            bgGradient="radial-gradient(ellipse farthest-corner at right bottom,
-      #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top,
-      #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);"
           >
             <Flex
               p="1em"
